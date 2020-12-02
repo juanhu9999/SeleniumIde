@@ -1,0 +1,144 @@
+{
+  "id": "ec4887d8-4a7b-4333-9556-b260ffae83ed",
+  "version": "2.0",
+  "name": "Control Flow",
+  "url": "https://the-internet.herokuapp.com/",
+  "tests": [{
+    "id": "cbd80fe0-46ad-4c0e-aa06-ea0d2583a412",
+    "name": "if/else if/else",
+    "commands": [{
+      "id": "617bf0da-59fa-4756-bb5f-06f12779bb7a",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return \"a\"",
+      "targets": [],
+      "value": "myVar"
+    }, {
+      "id": "601699b0-f67c-42f4-9744-3902aaf5cb5c",
+      "comment": "",
+      "command": "if",
+      "target": "${myVar} === \"a\"",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e44f0cd-4959-4c2d-9135-17a21644031c",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return \"a\"",
+      "targets": [],
+      "value": "output"
+    }, {
+      "id": "61c220c5-15ed-46d0-9a9e-06f182f0a137",
+      "comment": "",
+      "command": "elseIf",
+      "target": "${myVar} === \"b\"",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8c8d78b6-80e1-47f5-a962-d2031fa5ec07",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return \"a\"",
+      "targets": [],
+      "value": "output"
+    }, {
+      "id": "0ca71667-9b51-475e-b0ad-6b5c5137c092",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d393fb04-0bd1-4043-a5f7-ec4e3bea3092",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d38bb23c-cc4c-42ec-812c-7612064556df",
+      "comment": "",
+      "command": "assert",
+      "target": "output",
+      "targets": [],
+      "value": "a"
+    }]
+  }, {
+    "id": "f1f56ed4-f826-43ec-bbfb-d1f029618003",
+    "name": "ControlFlowPractica",
+    "commands": [{
+      "id": "3d3aaef7-1808-4627-8704-9246dcb05984",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return \"z\"",
+      "targets": [],
+      "value": "MyVar"
+    }, {
+      "id": "574e8ac4-d24c-4005-8417-22c2ff78b9fe",
+      "comment": "",
+      "command": "if",
+      "target": "${MyVar} === \"x\"",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49627f3e-9e13-49a5-8463-4cb66555780e",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return \"x\"",
+      "targets": [],
+      "value": "output"
+    }, {
+      "id": "55ac8935-2576-4f0e-b18b-f5d5183634ae",
+      "comment": "",
+      "command": "elseIf",
+      "target": "${MyVar} === \"y\"",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1cb2d493-f80f-4c02-b378-c2278d61e393",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return \"y\"",
+      "targets": [],
+      "value": "output"
+    }, {
+      "id": "12bed531-6c9b-450a-82cb-04c198b67a54",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c11cc75-817b-4369-b8c2-978499b3900e",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return \"z\"",
+      "targets": [],
+      "value": "output"
+    }, {
+      "id": "d984db99-50de-411a-be16-86f0ced82abc",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "147b850f-177a-490a-938b-e5d983287fca",
+      "comment": "",
+      "command": "assert",
+      "target": "output",
+      "targets": [],
+      "value": "z"
+    }]
+  }],
+  "suites": [{
+    "id": "a029815b-5c89-4af6-b549-579b3323ddfc",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cbd80fe0-46ad-4c0e-aa06-ea0d2583a412"]
+  }],
+  "urls": ["https://the-internet.herokuapp.com/"],
+  "plugins": []
+}

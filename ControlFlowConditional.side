@@ -1,0 +1,300 @@
+{
+  "id": "ec4887d8-4a7b-4333-9556-b260ffae83ed",
+  "version": "2.0",
+  "name": "Control Flow",
+  "url": "https://the-internet.herokuapp.com/",
+  "tests": [{
+    "id": "cbd80fe0-46ad-4c0e-aa06-ea0d2583a412",
+    "name": "if/else if/else",
+    "commands": [{
+      "id": "617bf0da-59fa-4756-bb5f-06f12779bb7a",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return \"c\"",
+      "targets": [],
+      "value": "myVar"
+    }, {
+      "id": "601699b0-f67c-42f4-9744-3902aaf5cb5c",
+      "comment": "",
+      "command": "if",
+      "target": "${myVar} === \"a\"",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e44f0cd-4959-4c2d-9135-17a21644031c",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return \"a\"",
+      "targets": [],
+      "value": "output"
+    }, {
+      "id": "61c220c5-15ed-46d0-9a9e-06f182f0a137",
+      "comment": "",
+      "command": "elseIf",
+      "target": "${myVar} === \"b\"",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8c8d78b6-80e1-47f5-a962-d2031fa5ec07",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return \"b\"",
+      "targets": [],
+      "value": "output"
+    }, {
+      "id": "0ca71667-9b51-475e-b0ad-6b5c5137c092",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08fcbf67-decb-44fa-bfdd-77b4e108bb49",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return \"c\"",
+      "targets": [],
+      "value": "output"
+    }, {
+      "id": "d393fb04-0bd1-4043-a5f7-ec4e3bea3092",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d38bb23c-cc4c-42ec-812c-7612064556df",
+      "comment": "",
+      "command": "assert",
+      "target": "output",
+      "targets": [],
+      "value": "c"
+    }]
+  }, {
+    "id": "e678b4d8-d20f-4b81-a6f8-dcc1c5c4e7b7",
+    "name": "repeat if",
+    "commands": [{
+      "id": "87980df6-cde9-4d05-8f75-f6bd38bf9fbe",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 1",
+      "targets": [],
+      "value": "check"
+    }, {
+      "id": "adeddeb3-3154-4e68-99e0-be1b24aa7e3d",
+      "comment": "",
+      "command": "do",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "033cf93b-6332-480a-a916-6e87e15e3269",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${check} + 1",
+      "targets": [],
+      "value": "check"
+    }, {
+      "id": "acb92a31-cd66-477e-b506-3a0aaf4cb237",
+      "comment": "",
+      "command": "repeatIf",
+      "target": "${check} < 3",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ff3185ed-c369-4e13-b501-a27c254508db",
+      "comment": "",
+      "command": "assert",
+      "target": "check",
+      "targets": [],
+      "value": "3"
+    }]
+  }, {
+    "id": "36644d3c-6f5d-408f-a44a-0d4e258bf107",
+    "name": "Times",
+    "commands": [{
+      "id": "53ae47a3-19ee-4bf2-99d1-21c1067b579a",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 1",
+      "targets": [],
+      "value": "check"
+    }, {
+      "id": "8c51a67a-dbf8-4b3c-8ec4-25bbd7414443",
+      "comment": "",
+      "command": "times",
+      "target": "2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14070cb2-2250-486d-aad1-ae8d9193d1e2",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${check}+1",
+      "targets": [],
+      "value": "check"
+    }, {
+      "id": "1ef0a9e6-a0b0-4897-895c-66afd7f92138",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6892b3de-3aa2-4bfb-acda-b2d31ef810fe",
+      "comment": "",
+      "command": "assert",
+      "target": "check",
+      "targets": [],
+      "value": "3"
+    }]
+  }, {
+    "id": "e7b31733-799e-4409-98fc-30435b3736c2",
+    "name": "while",
+    "commands": [{
+      "id": "cdd5efd0-2fd8-44f6-b240-727934f82295",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 1",
+      "targets": [],
+      "value": "check"
+    }, {
+      "id": "a68c6989-6e1f-4029-9a5b-98cd11c6937d",
+      "comment": "",
+      "command": "while",
+      "target": "${check} < 3",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "59757d0f-59fd-4070-bf4e-3f0145db38b5",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${check}+1",
+      "targets": [],
+      "value": "check"
+    }, {
+      "id": "2198f75f-97e7-4c6e-9d7f-3e33ed8b9ff5",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7bea0d46-b4c6-4f9d-aee4-f9d6770f0b60",
+      "comment": "",
+      "command": "assert",
+      "target": "check",
+      "targets": [],
+      "value": "3"
+    }]
+  }, {
+    "id": "5566d4d2-5dac-41ca-a22f-c198e8709543",
+    "name": "conditionals",
+    "commands": [{
+      "id": "fc31ba14-6075-4f7c-8e10-8c208f8c5cd2",
+      "comment": "",
+      "command": "open",
+      "target": "/entry_ad",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5356b6a4-1283-4a63-8581-6b880cf865e4",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48cb15b8-9b6c-4d87-a2c8-b37434171928",
+      "comment": "",
+      "command": "if",
+      "target": "document.querySelector('#modal') && document.querySelector('#modal').offsetHeight !== 0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2d4b58e9-66bc-4a9a-82e4-3bf13fa016bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal-footer > p",
+      "targets": [
+        ["css=.modal-footer > p", "css:finder"],
+        ["xpath=//div[@id='modal']/div[2]/div[3]/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Close')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9ad9ee5-0c9d-44f9-858c-e62b0a5dc130",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "css=.modal",
+      "targets": [
+        ["css=.modal", "css:finder"],
+        ["xpath=//div[@id='modal']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": "1000"
+    }, {
+      "id": "5662e80e-8f79-40e3-8ed1-634e771eba97",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal-footer > p",
+      "targets": [
+        ["css=.modal-footer > p", "css:finder"],
+        ["xpath=//div[@id='modal']/div[2]/div[3]/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Close')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e901cefb-03fd-4dc0-9136-5a50bdcb7e13",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Elemental Selenium",
+      "targets": [
+        ["linkText=Elemental Selenium", "linkText"],
+        ["css=.large-4 a", "css:finder"],
+        ["xpath=//a[contains(text(),'Elemental Selenium')]", "xpath:link"],
+        ["xpath=//div[@id='page-footer']/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://elementalselenium.com/']", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Elemental Selenium')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win890",
+      "windowTimeout": 2000
+    }, {
+      "id": "e4ac0d21-e1c1-4c78-9bf6-998ce1982638",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win890}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bfd9f2e3-9dc0-453b-bccd-77b41ed0483b",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Elemental Selenium: Receive a Free, Weekly Tip on Using Selenium like a Pro",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "641b03d3-4c4e-4072-94a1-a1272cf7647e",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a029815b-5c89-4af6-b549-579b3323ddfc",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cbd80fe0-46ad-4c0e-aa06-ea0d2583a412"]
+  }],
+  "urls": ["https://the-internet.herokuapp.com/"],
+  "plugins": []
+}
